@@ -17,4 +17,10 @@ class Song
   new_song
   end
 
+def Song.new_by_name(song)
+  new_song_by_name = Song.new
+  new_song_by_name.name = song
+  new_song_by_name
+end
+
 end
