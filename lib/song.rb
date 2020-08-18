@@ -34,7 +34,6 @@ end
 
 def Song.find_by_name(song)
   @@all.find {|temp| temp == song}
-
 end
 
 
