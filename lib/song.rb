@@ -37,7 +37,8 @@ def Song.find_by_name(song)
 end
 
 def Song.find_or_create_by_name(song)
-  Song.create_by_name(song) if Song.find_by_name(song) == false
+  Song.create_by_name(song)
+  Song.find_by_name(song)
 end
 
 end
