@@ -49,6 +49,8 @@ end
 def Song.new_from_filename (filename)
   data = filename.split(" - ")
   puts data
+  artist = data[0]
+  name = data[1]
   binding.pry
 end
 
