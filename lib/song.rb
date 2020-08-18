@@ -34,11 +34,8 @@ end
 
 def Song.find_by_name(song)
   @@all.each do |song_name|
-    if song_name == song
-      song.class
-    end
+    return self.this if song_name == song_name
   end
-  song.class
 end
 
 
