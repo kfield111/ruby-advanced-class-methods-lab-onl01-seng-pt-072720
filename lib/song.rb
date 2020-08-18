@@ -42,7 +42,7 @@ def Song.find_or_create_by_name(song)
 end
 
 
-Song.alphabetical
+def Song.alphabetical
 @@all.sort_by (@@all.name)
 end
 
