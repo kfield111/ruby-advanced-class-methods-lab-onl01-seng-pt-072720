@@ -46,4 +46,9 @@ def Song.alphabetical
 @@all.sort_by {|alpha| alpha.name}
 end
 
+def Song.new_from_filename (filename)
+  data = filename.split("-")
+  puts data
+end
+
 end
