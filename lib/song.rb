@@ -54,6 +54,7 @@ def Song.new_from_filename (filename)
   new_song.artist_name = artist_name
   new_song.name = name
   new_song
+  binding.pry
 end
 
 end
