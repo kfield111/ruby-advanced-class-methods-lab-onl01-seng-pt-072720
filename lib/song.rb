@@ -33,9 +33,9 @@ end
 
 
 def Song.find_by_name(song)
-  @@all.each do |song_name|
+  @@all.each do |song_name, index|
     if song_name == song
-      self
+      index
     end
   end
   song
