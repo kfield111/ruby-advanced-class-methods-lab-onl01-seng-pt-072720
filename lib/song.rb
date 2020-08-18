@@ -32,5 +32,12 @@ def Song.create_by_name(song)
 end
 
 
+def Song.find_by_name(song)
+  self.class.all.each do {|song_name| song_name == song}
+song
+end
+
+
+
 
 end
