@@ -36,6 +36,10 @@ def Song.find_by_name(song)
   @@all.find {|temp| temp == song}
 end
 
-
+def Song.find_or_create_by_name(song)
+  x = nil
+  @@all.each do |song_name|
+    song_name ||= song
+  end
 
 end
