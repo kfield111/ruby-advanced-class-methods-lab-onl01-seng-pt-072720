@@ -43,7 +43,7 @@ end
 
 
 def Song.alphabetical
-@@all.sort_by {|alpha| alpha.name)
+@@all.sort_by {|alpha| alpha.name}
 end
 
 end
