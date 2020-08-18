@@ -47,13 +47,13 @@ def Song.alphabetical
 end
 
 def Song.new_from_filename (filename)
-  data = filename.split(" - ")
+  data = filename.tr!(".mp3").split(" - ")
   puts data
   artist_name = data[0]
   name = data[1]
   new_song = self.new
   new_song.artist_name = artist_name
-  new_song.name = name.tr!(".mp3")
+  new_song.name = name
   new_song
 end
 
