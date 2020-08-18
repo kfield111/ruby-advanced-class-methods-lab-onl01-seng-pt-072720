@@ -33,7 +33,7 @@ end
 
 
 def Song.find_by_name(song)
-  @@all.find {|temp| temp == song}
+  @@all.find {|temp| temp.name == song}
 end
 
 def Song.find_or_create_by_name(song)
