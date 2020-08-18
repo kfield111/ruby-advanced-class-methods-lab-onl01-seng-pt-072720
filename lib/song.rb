@@ -38,6 +38,7 @@ def Song.find_by_name(song)
       self.new
     end
   end
+  self
 end
 
 
