@@ -54,6 +54,7 @@ def Song.new_from_filename (filename)
   new_song = self.new
   new_song.artist = artist
   new_song.name = name
+  new_song
 end
 
 end
