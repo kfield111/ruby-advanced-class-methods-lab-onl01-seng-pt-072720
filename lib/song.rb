@@ -49,10 +49,10 @@ end
 def Song.new_from_filename (filename)
   data = filename.split(" - ")
   puts data
-  artist = data[0]
+  artist_name = data[0]
   name = data[1]
   new_song = self.new
-  new_song.artist = artist
+  new_song.artist_name = artist_name
   new_song.name = name
   new_song
 end
