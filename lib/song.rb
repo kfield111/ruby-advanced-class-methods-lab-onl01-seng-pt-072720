@@ -38,11 +38,6 @@ end
 
 def Song.find_or_create_by_name(song)
   Song.create_by_name if Song.find_by_name == false
-
-
-  # @@all.each do |song_name|
-  #   song_name ||= song
-  end
 end
 
 end
