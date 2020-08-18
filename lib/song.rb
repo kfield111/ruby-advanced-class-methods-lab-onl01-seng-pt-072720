@@ -38,7 +38,7 @@ def Song.find_by_name(song)
       self.instance
     end
   end
-  song
+  song.instance
 end
 
 
