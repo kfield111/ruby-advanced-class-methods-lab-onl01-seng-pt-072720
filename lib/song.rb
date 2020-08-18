@@ -38,7 +38,7 @@ def Song.find_by_name(song)
       index
     end
   end
-  song
+  index
 end
 
 
