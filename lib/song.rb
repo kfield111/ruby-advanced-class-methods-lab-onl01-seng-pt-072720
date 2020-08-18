@@ -33,7 +33,7 @@ end
 
 
 def Song.find_by_name(song)
-  self.class.all.each do |song_name|
+  @@all.each do |song_name|
     if song_name.name == song
       song
     end
