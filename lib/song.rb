@@ -20,6 +20,7 @@ class Song
 def Song.new_by_name(song)
   new_song_by_name = Song.new
   new_song_by_name.name = song
+  new_song_by_name.save
   new_song_by_name
 end
 
