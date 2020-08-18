@@ -54,7 +54,16 @@ def Song.new_from_filename (filename)
   new_song.artist_name = artist_name
   new_song.name = name
   new_song
-  binding.pry
 end
+
+def Song.create_from_filename (filename)
+  data = filename.chomp(".mp3").split(" - ")
+  artist_name = data[0]
+  name = data[1]
+  new_song = self.new
+  new_song.artist_name = artist_name
+  new_song.name = name
+  new_song
+  binding.pry
 
 end
