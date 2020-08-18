@@ -41,5 +41,6 @@ def Song.find_or_create_by_name(song)
   @@all.each do |song_name|
     song_name ||= song
   end
+end
 
 end
