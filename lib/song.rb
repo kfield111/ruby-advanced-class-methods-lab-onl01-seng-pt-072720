@@ -35,7 +35,7 @@ end
 def Song.find_by_name(song)
   @@all.each do |song_name|
     if song_name == song
-      self
+      self.instance
     end
   end
   song
