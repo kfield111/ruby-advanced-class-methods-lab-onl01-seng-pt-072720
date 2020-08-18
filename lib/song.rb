@@ -48,7 +48,6 @@ end
 
 def Song.new_from_filename (filename)
   data = filename.chomp(".mp3").split(" - ")
-  puts data
   artist_name = data[0]
   name = data[1]
   new_song = self.new
