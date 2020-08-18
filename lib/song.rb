@@ -63,8 +63,7 @@ def Song.create_from_filename (filename)
   new_song = self.new
   new_song.artist_name = artist_name
   new_song.name = name
-  new_song
-  self.save
+  new_song.save
 end
 
 
