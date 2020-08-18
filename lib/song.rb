@@ -49,6 +49,7 @@ end
 def Song.new_from_filename (filename)
   data = filename.split(" - ")
   puts data
+  binding.pry
 end
 
 end
