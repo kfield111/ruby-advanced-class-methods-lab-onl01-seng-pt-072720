@@ -39,6 +39,7 @@ def Song.find_by_name(song)
     else
       false
     end
+    self.name
   end
 end
 
