@@ -47,7 +47,7 @@ def Song.alphabetical
 end
 
 def Song.new_from_filename (filename)
-  data = filename.delete(".mp3").split(" - ")
+  data = filename.delete(".mp3", "^m").split(" - ")
   puts data
   artist_name = data[0]
   name = data[1]
