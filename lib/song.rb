@@ -51,6 +51,7 @@ def Song.new_from_filename (filename)
   puts data
   artist = data[0]
   name = data[1]
+  binding.pry
 end
 
 end
