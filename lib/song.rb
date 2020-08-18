@@ -41,4 +41,9 @@ def Song.find_or_create_by_name(song)
   Song.find_by_name(song)
 end
 
+
+Song.alphabetical
+@@all.sort_by
+end
+
 end
